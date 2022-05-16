@@ -8,7 +8,6 @@
     using BookClubOrganizer.Data.Models;
     using BookClubOrganizer.Data.Repositories;
     using BookClubOrganizer.Data.Seeding;
-    using BookClubOrganizer.Services.Data;
     using BookClubOrganizer.Services.Mapping;
     using BookClubOrganizer.Services.Messaging;
     using BookClubOrganizer.Web.ViewModels;
@@ -64,7 +63,6 @@
 
             // Application services
             services.AddTransient<IEmailSender, NullMessageSender>();
-            services.AddTransient<ISettingsService, SettingsService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
